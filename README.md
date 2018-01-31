@@ -1,4 +1,3 @@
-
 #README
 
 This readme explains the script in run_analysis.R
