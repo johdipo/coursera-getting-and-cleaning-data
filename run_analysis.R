@@ -46,10 +46,9 @@ dataset_extract <- dataset_extract[,-1]
 
 
 ###########
-#4. Labeling dataset variable
+#4. Labeling dataset variables
 ###########
 
-features <- read.table("./UCI HAR Dataset/features.txt")
 features_names <-  grep(c("mean|std"), features$V2, value = TRUE)
 colnames <- c(features_names, "Subject", "ActivityLabel")
 colnames(dataset_extract) <- colnames
@@ -58,15 +57,13 @@ colnames(dataset_extract) <- colnames
 #5. Creating a second dataset with averages
 ###########
 
-dataset_small <- dataset_extract[,-(3:79)]
-
-##Converting to dyplr
 dataset_means <- tbl_df(dataset_extract)
 
 dataset_means %>%
   group_by(Subject, ActivityLabel) %>%
   summarize_all(mean) %>%
-  print()
+  print() %>%
+  write.table(file = "tidydataset.txt")
 
 
 
