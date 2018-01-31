@@ -5,11 +5,11 @@ This readme explains the script in run_analysis.R
 
 ##1. Reading and merging the train set and the test set
 
-Reading individual files
+###Reading individual files
 
 In this section I use read.table() to read individual files. I use the argument col.names in order to avoid creating default column name (V1, V2, ...) which will avoid confusion later while merging.
 
-Creating one table for train and one table for test
+###Creating one table for train and one table for test
 
 In this section I merge the files to create two tables: train and test. For each table I group the subject and the measurement. I used data.frame() as the goal is just to add columns. cbind() would have done the trick also.
 
