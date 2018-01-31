@@ -63,7 +63,7 @@ dataset_means %>%
   group_by(Subject, ActivityLabel) %>%
   summarize_all(mean) %>%
   print() %>%
-  write.table(file = "tidydataset.txt")
+  write.table(file = "tidydataset.txt", row.name=FALSE)
 
 
 
