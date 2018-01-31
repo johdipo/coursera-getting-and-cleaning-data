@@ -1,12 +1,12 @@
-#Codebook
+# Codebook
 
 This codebook provides further information about this analysis.
 
-##Data Source
+### Data Source
 
 The data comes from UCI Machine Learning Repository, more information available on: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-##File list
+### File list
 
 Train dataset (7352 observations for 21 of the 30 volunteers):
 * `X_train.txt`: Contains 561 features (measurements)
@@ -24,11 +24,11 @@ Features and activity labels
 
 Other files such as raw signal data and information files are present in the data source but were not used.
 
-##tidydataset.txt
+### tidydataset.txt
 
 Please consult README.md for further description about the script.
 
-###Features variables (measurements)
+#### Features variables (measurements)
 
 Tidydataset.txt contains the average by volounteers and by activities for each of the following feature. Please refere to data source for more information about the feature descriptions.
 
@@ -113,7 +113,7 @@ Tidydataset.txt contains the average by volounteers and by activities for each o
 * `fBodyBodyGyroJerkMagMeanFreq`
 
 
-### Activity Labels
+#### Activity Labels
 
 * `WALKING` (value `1`): subject was walking during the test
 * `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
